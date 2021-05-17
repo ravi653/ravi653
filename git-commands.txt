@@ -1,0 +1,25 @@
+1-Open GIT CMD
+2-Change Directory to the project folder
+3-Command "git init" - initialize empty git repository in ur project folder
+4-Command "git add ." - adds all the existing files to repository 
+5-Command "git add filename "- adds mentioned file name
+6-Command "git status" -The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+7-Command "" git config --global user.email "you@example.com"  "" , "" git config --global user.name "Your Name"  "". - to configure git credentials
+8-Command "git commit -m "string" - Record the changes made to the files to a local repository
+9."git push -u origin master" - Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.
+10-"git diff" - checks for differences btwn master & child baranch of respecive code
+11-"git commit -am "string" - u can add & commit both at the same time & works for only modified files but not for newly created files
+12."git stash" - ?
+13."git merge InactiveBranchName" - For example if we r dealing with multiple branches, all updates can be updated with master
+
+14.git pull origin GeethaBranch
+
+Note : If we r editing with in master file & also have performed some changes in child branches, now before updating the master branch with child branches , what ever changes we made on master file need to committed first then we have to merge child branches with master branch to avoid conflicts. this will upadate the master file along with child file i.e what ever changes we have made in master also reflects in child branch.
+
+
+SSH KEY: SHA256:2gFDugGDlcJXo6bY5PXEoJoWShIZvYo3fIMJHoB4B1k shinchan.tadela@gmail.com
+
+
+
+reference:http://guides.beanstalkapp.com/version-control/common-git-commands.html
+https://www.youtube.com/watch?v=RGOj5yH7evk
