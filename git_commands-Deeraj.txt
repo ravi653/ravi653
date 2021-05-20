@@ -1,0 +1,67 @@
+Git Command to clone a specific branch only 
+git clone --single-branch --branch <branchname> <remote-repo-url>
+
+git clone --single-branch --branch test_deleteBranch https://github.com/dheeraj-neppallli/testing.git
+
+1. Create a branch locally using the below command. This will point the branch as master
+git checkout -b <branch_name> <branch_name_fromwhich_newBranch_to_be_created>
+eg: git checkout -b subbranch_of_b1 branch1
+
+2. After all work done, push the branch to remote repo using the below command:
+
+git push --set-upstream origin <branch_name>
+eg:- git push --set-upstream origin test_deleteBranch
+
+3. To delete a branch from remote git, execute the below command :
+
+git push origin --delete <branch_name>
+git push origin --delete buildBranch
+
+4. To add a folder to the git, navigate to the folderpath and use the below command
+git add <folder_name>
+5. Type git status to confirm
+6. Commit the code using the below command 
+
+git commit -m "Testing Commit"
+
+7. To reflect the changes in the repo, use the below command 
+
+git push origin <branch_name>
+
+git push origin test_deleteBranch
+
+8. Git Pull related commands
+
+git checkout master
+git pull --rebase origin
+
+To force the git pull from remote repo to local machine to overwrite the changes in the local machine git repo, use the below command:
+git reset --hard HEAD
+git pull
+
+If a git conflict is observed between 2 developers wrt commit, then use git rebase command as mentioned below :
+
+git pull --rebase
+
+Better use git pull rebase. Add the below command in the local repo
+
+git config --global branch.autosetuprebase always
+
+Refer the below link for further info
+
+https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
+
+Refer the below docs 
+
+https://www.atlassian.com/git/tutorials/syncing
+
+https://wtmatter.com/git-branch-clone/#:~:text=Sometimes%2C%20you%20might%20be%20wanted,by%20the%20%2D%2Dbranch%20option.
+
+https://devconnected.com/how-to-clone-a-git-repository/#:~:text=In%20order%20to%20clone%20a%20specific%20branch%2C%20you%20have%20to,branch%20you%20want%20to%20clone.&text=%24%20git%20clone%20%2Db%20dev%20https,Enumerating%20objects%3A%20813%2C%20done.
+
+https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch
+
+https://www.atlassian.com/git/tutorials/using-branches
+
+https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
+
